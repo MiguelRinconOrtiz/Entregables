@@ -4,9 +4,8 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <ctype.h>
 #include <stdio.h>
-
-
 
 int main(int argc, char *argv[])
 {
@@ -20,8 +19,7 @@ int main(int argc, char *argv[])
 	if ((sock_listen = socket(AF_INET, SOCK_STREAM, 0)) < 0)
 		printf("Error creant socket");
 	// Fem el bind al port
-	
-	
+
 	memset(&serv_adr, 0, sizeof(serv_adr));// inicialitza a zero serv_addr
 	serv_adr.sin_family = AF_INET;
 	
@@ -32,7 +30,6 @@ int main(int argc, char *argv[])
 	serv_adr.sin_port = htons(9000);
 	if (bind(sock_listen, (struct sockaddr *) &serv_adr, sizeof(serv_adr)) < 0)
 		printf ("Error al bind");
-	
 	if (listen(sock_listen, 3) < 0)
 		printf("Error en el Listen");
 	
@@ -86,6 +83,37 @@ int main(int argc, char *argv[])
 				strcpy (respuesta,"SI");
 				else
 					strcpy (respuesta,"NO");
+			
+			else if(codigo==4){
+				int i,j;
+				int diferente=0;
+				j= strlen(nombre) -1;
+				
+				for(i=0; nombre[i] != '\0';i++)
+					nombre[i]= toupper(nombre[i]);
+				i=0;
+				while(diferente!=1 && i!=j){
+					
+					if(nombre[i]==nombre[j])
+					{	i++;
+						j--;
+					}
+					else
+						diferente =1;
+				}
+				if(diferente==0)
+				strcpy (respuesta,"ES palindromo");
+				else
+					strcpy (respuesta,"NO es palindromo");
+					
+			}
+			else if(codigo==5){
+				int i=0;
+				
+				for(i; nombre[i] != '\0';i++)
+					nombre[i]= toupper(nombre[i]);
+				strcpy (respuesta,nombre);
+			}
 			else //quiere saber si es alto
 			{
 				p = strtok( NULL, "/");
@@ -108,3 +136,4 @@ int main(int argc, char *argv[])
 		close(sock_conn); 
 	}
 }
+
