@@ -28,209 +28,150 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.nombre = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.nombremayus = new System.Windows.Forms.RadioButton();
-            this.palind = new System.Windows.Forms.RadioButton();
-            this.Longitud = new System.Windows.Forms.RadioButton();
-            this.altura = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.alturaBox = new System.Windows.Forms.TextBox();
-            this.Bonito = new System.Windows.Forms.RadioButton();
             this.button3 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tBcons = new System.Windows.Forms.TextBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(46, 48);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 48);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre";
-            // 
-            // nombre
-            // 
-            this.nombre.Location = new System.Drawing.Point(232, 60);
-            this.nombre.Margin = new System.Windows.Forms.Padding(6);
-            this.nombre.Name = "nombre";
-            this.nombre.Size = new System.Drawing.Size(324, 31);
-            this.nombre.TabIndex = 3;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(50, 77);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Location = new System.Drawing.Point(25, 40);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(298, 60);
+            this.button1.Size = new System.Drawing.Size(149, 31);
             this.button1.TabIndex = 4;
             this.button1.Text = "conectar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(232, 332);
-            this.button2.Margin = new System.Windows.Forms.Padding(6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 44);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Enviar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.groupBox1.Controls.Add(this.nombremayus);
-            this.groupBox1.Controls.Add(this.palind);
-            this.groupBox1.Controls.Add(this.Longitud);
-            this.groupBox1.Controls.Add(this.altura);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.alturaBox);
-            this.groupBox1.Controls.Add(this.Bonito);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.nombre);
-            this.groupBox1.Location = new System.Drawing.Point(46, 200);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox1.Size = new System.Drawing.Size(726, 388);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Peticion";
-            // 
-            // nombremayus
-            // 
-            this.nombremayus.AutoSize = true;
-            this.nombremayus.Location = new System.Drawing.Point(232, 270);
-            this.nombremayus.Margin = new System.Windows.Forms.Padding(6);
-            this.nombremayus.Name = "nombremayus";
-            this.nombremayus.Size = new System.Drawing.Size(418, 29);
-            this.nombremayus.TabIndex = 11;
-            this.nombremayus.TabStop = true;
-            this.nombremayus.Text = "Devuelveme mi nombre en mayusculas";
-            this.nombremayus.UseVisualStyleBackColor = true;
-            // 
-            // palind
-            // 
-            this.palind.AutoSize = true;
-            this.palind.Location = new System.Drawing.Point(232, 229);
-            this.palind.Margin = new System.Windows.Forms.Padding(6);
-            this.palind.Name = "palind";
-            this.palind.Size = new System.Drawing.Size(361, 29);
-            this.palind.TabIndex = 10;
-            this.palind.TabStop = true;
-            this.palind.Text = "Dime si mi nombre es palíndromo";
-            this.palind.UseVisualStyleBackColor = true;
-            // 
-            // Longitud
-            // 
-            this.Longitud.AutoSize = true;
-            this.Longitud.Location = new System.Drawing.Point(232, 147);
-            this.Longitud.Margin = new System.Windows.Forms.Padding(6);
-            this.Longitud.Name = "Longitud";
-            this.Longitud.Size = new System.Drawing.Size(333, 29);
-            this.Longitud.TabIndex = 7;
-            this.Longitud.TabStop = true;
-            this.Longitud.Text = "Dime la longitud de mi nombre";
-            this.Longitud.UseVisualStyleBackColor = true;
-            // 
-            // altura
-            // 
-            this.altura.AutoSize = true;
-            this.altura.Location = new System.Drawing.Point(232, 188);
-            this.altura.Margin = new System.Windows.Forms.Padding(6);
-            this.altura.Name = "altura";
-            this.altura.Size = new System.Drawing.Size(195, 29);
-            this.altura.TabIndex = 7;
-            this.altura.TabStop = true;
-            this.altura.Text = "Dime si soy alto";
-            this.altura.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(38, 175);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 25);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Altura";
-            // 
-            // alturaBox
-            // 
-            this.alturaBox.Location = new System.Drawing.Point(30, 212);
-            this.alturaBox.Margin = new System.Windows.Forms.Padding(6);
-            this.alturaBox.Name = "alturaBox";
-            this.alturaBox.Size = new System.Drawing.Size(120, 31);
-            this.alturaBox.TabIndex = 9;
-            // 
-            // Bonito
-            // 
-            this.Bonito.AutoSize = true;
-            this.Bonito.Location = new System.Drawing.Point(232, 103);
-            this.Bonito.Margin = new System.Windows.Forms.Padding(6);
-            this.Bonito.Name = "Bonito";
-            this.Bonito.Size = new System.Drawing.Size(314, 29);
-            this.Bonito.TabIndex = 8;
-            this.Bonito.TabStop = true;
-            this.Bonito.Text = "Dime si mi nombre es bonito";
-            this.Bonito.UseVisualStyleBackColor = true;
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(50, 638);
-            this.button3.Margin = new System.Windows.Forms.Padding(6);
+            this.button3.Location = new System.Drawing.Point(284, 301);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(294, 102);
+            this.button3.Size = new System.Drawing.Size(147, 53);
             this.button3.TabIndex = 10;
             this.button3.Text = "desconectar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox3.Controls.Add(this.tBcons);
+            this.groupBox3.Controls.Add(this.radioButton3);
+            this.groupBox3.Controls.Add(this.radioButton2);
+            this.groupBox3.Controls.Add(this.radioButton1);
+            this.groupBox3.Controls.Add(this.button5);
+            this.groupBox3.Location = new System.Drawing.Point(50, 97);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(400, 191);
+            this.groupBox3.TabIndex = 14;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Consultas";
+            // 
+            // tBcons
+            // 
+            this.tBcons.Location = new System.Drawing.Point(142, 47);
+            this.tBcons.Multiline = true;
+            this.tBcons.Name = "tBcons";
+            this.tBcons.Size = new System.Drawing.Size(174, 91);
+            this.tBcons.TabIndex = 20;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(25, 121);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(75, 17);
+            this.radioButton3.TabIndex = 18;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Consulta 3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.MouseLeave += new System.EventHandler(this.radioButton3_MouseLeave);
+            this.radioButton3.MouseHover += new System.EventHandler(this.radioButton3_MouseHover);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(25, 84);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(75, 17);
+            this.radioButton2.TabIndex = 17;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Consulta 2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.MouseLeave += new System.EventHandler(this.radioButton2_MouseLeave);
+            this.radioButton2.MouseHover += new System.EventHandler(this.radioButton2_MouseHover);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(25, 47);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(75, 17);
+            this.radioButton1.TabIndex = 16;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Consulta 1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.MouseLeave += new System.EventHandler(this.radioButton1_MouseLeave);
+            this.radioButton1.MouseHover += new System.EventHandler(this.radioButton1_MouseHover);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(126, 157);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Enviar";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(209, 47);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 15;
+            this.button6.Text = "LISTA";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1482, 1081);
+            this.ClientSize = new System.Drawing.Size(516, 366);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Text = "ejGuia";
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox nombre;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton Longitud;
-        private System.Windows.Forms.RadioButton Bonito;
-        private System.Windows.Forms.RadioButton altura;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox alturaBox;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.RadioButton palind;
-        private System.Windows.Forms.RadioButton nombremayus;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.TextBox tBcons;
+        private System.Windows.Forms.Button button6;
     }
 }
 
